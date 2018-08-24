@@ -1,0 +1,48 @@
+.circle__container {
+    width: 500px;
+    height: 500px;
+    background: #553194;
+    margin: 70px;
+    border-radius: 300px;
+    position: relative;
+}
+
+.line1 {
+    position: absolute;
+    top: 320px;
+    left: 78px;
+    background: #000;
+    height: 2px;
+    width: 499px;
+}
+
+.line2 {
+    position: absolute;
+    top: 71px;
+    left: 327px;
+    background: #000;
+    height: 499px;
+    width: 2px;
+}
+
+.circle__little {
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50px;
+    position: absolute;
+    top: 72px;
+    left: 297px;
+    animation: circleRed 2s infinite;
+    /* animation: circleRedDown 4s infinite; */
+}
+
+@keyframes circleRed {
+    from {top: 72px; bottom: 30px; background: blue}
+    to {top: 508px; background: white}
+}
+
+/* @keyframes circleRedDown {
+    from {top: 508px;}
+    to {top: 72px;}
+} */
